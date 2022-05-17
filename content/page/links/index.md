@@ -23,7 +23,7 @@ comments: false
 
 我的友情链接地址：
 
-```
+```yaml
 李嘉缘:
     link: https://laysan.site
     avatar: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/uPic/tx.png
