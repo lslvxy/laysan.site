@@ -1,5 +1,5 @@
 ---
-title: 关于我
+title: About
 description: 做一个简单的人，踏实而务实
 date: '2019-02-28'
 aliases:
