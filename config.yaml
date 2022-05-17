@@ -49,7 +49,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/uPic/tx.png
+            src: "https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/uPic/tx.png"
 
     article:
         math: false
