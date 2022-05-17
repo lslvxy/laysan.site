@@ -48,7 +48,7 @@ params:
         subtitle: 诗意的橙子，内涵的柚子.
         avatar:
             enabled: true
-            local: true
+            local: false
             src: "https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/uPic/tx.png"
 
     article:
