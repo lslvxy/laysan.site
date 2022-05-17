@@ -192,6 +192,11 @@ menu:
           url: https://github.com/lslvxy
           params:
               icon: brand-github
+        - identifier: gmail
+          name: Gmail
+          url: mailto:lslvxy@gmail.com
+          params:
+              icon: brand-gmail
 
 related:
     includeNewer: true
