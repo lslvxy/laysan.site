@@ -71,9 +71,10 @@ params:
             adminLabel:
 
         utterances:
-            repo: https://github.com/lslvxy/blog-comment
+            repo: lslvxy/blog-comment
             issueTerm: pathname
             label:
+            theme: "github-dark"
 
         remark42:
             host:
