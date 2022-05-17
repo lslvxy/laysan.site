@@ -61,7 +61,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: utterances
 
         disqusjs:
             shortname: lslvxy
@@ -71,7 +71,7 @@ params:
             adminLabel:
 
         utterances:
-            repo:
+            repo: https://github.com/lslvxy/blog-comment
             issueTerm: pathname
             label:
 
