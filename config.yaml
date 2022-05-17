@@ -64,14 +64,14 @@ params:
         provider: utterances
 
         disqusjs:
-            shortname: lslvxy
+            shortname: 
             apiUrl:
             apiKey:
             admin:
             adminLabel:
 
         utterances:
-            repo: lslvxy/blog-comment
+            repo: lslvxy/comments.laysan.site
             issueTerm: pathname
             label:
             theme: "github-dark"

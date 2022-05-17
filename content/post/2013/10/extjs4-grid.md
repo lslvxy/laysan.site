@@ -1,6 +1,6 @@
 ---
 title:  ExtJs4之Grid组件
-date: 2013-11-17
+date: 2013-10-17
 comments: on
 categories: [ExtJs]
 tags: [extjs, grid,表格]
