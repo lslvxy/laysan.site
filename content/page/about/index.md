@@ -26,6 +26,6 @@ menu:
 ```
 李嘉缘:
     link: https://laysan.site
-    avatar: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/uPic/tx.png
+    avatar: https://laysan.site/avatar.png
     descr: 诗意的橙子,内涵的柚子.
 ```
