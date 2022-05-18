@@ -23,7 +23,7 @@ menu:
 
 我的友情链接地址：
 
-```
+```yaml
 李嘉缘:
     link: https://laysan.site
     avatar: https://laysan.site/avatar.png
