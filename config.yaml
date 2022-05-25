@@ -2,12 +2,12 @@ baseurl: https://laysan.site
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 10
-title: 李嘉缘
+title: 李嘉缘的博客
 
 languages:
     en:
         languageName: English
-        title: 李嘉缘
+        title: 李嘉缘的博客
         weight: 1
 
 # Change it to your Disqus shortname before using
