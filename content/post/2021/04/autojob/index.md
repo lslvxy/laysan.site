@@ -93,6 +93,26 @@ java -jar autojob.jar
 
 
 ### Docker部署
+#### 拉取Docker镜像 
+
+```
+docker pull registry.cn-hangzhou.aliyuncs.com/laysan/autojob
+```
+#### 运行
+
+```bash
+docker run  --restart=always -d -p 8088:8080  \
+-e AUTOJOB_DB_TYPE=h2 \
+-e AUTOJOB_DB_URL=jdbc:h2:/opt/autojob \
+-e AUTOJOB_DB_USERNAME=sa \
+-e AUTOJOB_DB_PASSWORD=123456 \
+-e AUTOJOB_PASSWORD_ENCRYPT=false \
+-e AUTOJOB_RSA_PUBLIC_KEY=xxx \
+-e AUTOJOB_RSA_PRIVATE_KEY=xxx \
+--name autojob \
+registry.cn-hangzhou.aliyuncs.com/laysan/autojob
+```
+请根据自己的需要配置相关环境变量
 
 ## 支持项目
 
