@@ -24,7 +24,7 @@ menu:
 我的友情链接地址：
 
 ```yaml
-李嘉缘:
+Laysan:
     link: https://laysan.site
     avatar: https://laysan.site/avatar.png
     descr: 诗意的橙子,内涵的柚子.
