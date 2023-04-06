@@ -5,10 +5,6 @@ links:
     description: GitHub is the world's largest software development platform.
     website: https://github.com
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
 menu:
     main: 
         weight: -50
@@ -24,7 +20,7 @@ comments: false
 我的友情链接地址：
 
 ```yaml
-李嘉缘:
+Laysan:
     link: https://laysan.site
     avatar: https://laysan.site/avatar.png
     descr: 诗意的橙子,内涵的柚子.
