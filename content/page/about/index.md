@@ -27,5 +27,5 @@ menu:
 Laysan:
     link: https://laysan.site
     avatar: https://laysan.site/avatar.png
-    descr: 诗意的橙子,内涵的柚子.
+    descr: Poetic Oranges, Lovely Pomelo.
 ```
