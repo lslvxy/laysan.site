@@ -87,7 +87,7 @@ admin = ""
 adminLabel = ""
 
 [comments.utterances]
-repo = "lslvxy/comments.laysan.site"
+repo = "lslvxy/laysan.site"
 issueTerm = "pathname"
 label = ""
 
