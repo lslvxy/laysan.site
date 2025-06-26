@@ -5,7 +5,7 @@ comments: on
 categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202304061230
-no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
+image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
 description: 从零开始的 All In One With PVE 之一 硬件配置与系统安装
 ---
 
