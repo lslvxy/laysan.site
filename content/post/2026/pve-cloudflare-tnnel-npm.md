@@ -96,3 +96,6 @@ docker network connect proxy-net homepage
 1.  **极简配置**：新增服务只需在 NPM 点几下，无需动域名解析和隧道。
 2.  **全链路加密**：Cloudflare 边缘证书 + NPM 内部转发。
 3.  **高可用性**：即便旁路系统挂了，也不影响基础局域网的稳定性。
+
+---
+*本文首发于我的个人博客 https://laysan.site，转载请注明出处。*
