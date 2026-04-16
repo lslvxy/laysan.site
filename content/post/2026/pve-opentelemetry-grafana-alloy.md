@@ -10,7 +10,6 @@ description: VE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的�
 ---
 
 
-# PVE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的全栈观测实践
 
 ## 引言
 
