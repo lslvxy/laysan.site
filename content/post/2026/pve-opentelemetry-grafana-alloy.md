@@ -1,12 +1,12 @@
 ---
-title:  VE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的全栈观测实践
+title:  PVE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的全栈观测实践
 date: 2026-04-16
 comments: on
 categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202604161230
 no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
-description: VE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的全栈观测实践
+description: PVE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的全栈观测实践
 ---
 
 
