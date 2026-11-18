@@ -1,10 +1,10 @@
 ---
 title: Proxmox VE 给 OpenWrt 扩盘后仍只有 100 MB？离线扩展 ext4 根分区
-date: 2026-11-19
+date: 2026-11-18
 comments: on
 categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
-id: 202611191230
+id: 202611181230
 no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
 description: Proxmox VE 给 OpenWrt 扩盘后仍只有 100 MB？离线扩展 ext4 根分区
 ---
