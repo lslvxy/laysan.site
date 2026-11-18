@@ -2,9 +2,9 @@ name: Deploy to Github Pages
 
 on:
     push:
-        branches: [master]
+        branches: [main, master]
     pull_request:
-        branches: [master]
+        branches: [main, master]
 
 jobs:
     build:
@@ -30,19 +30,20 @@ jobs:
 
             - uses: actions/setup-go@v5
               with:
-                  go-version: "^1.17.0"
+                  go-version: "1.27.x"
             - run: go version
 
             - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v2
+              uses: peaceiris/actions-hugo@v3
               with:
-                  hugo-version: "latest"
-                  extended: true
+                  hugo-version: "0.170.1"
+                  dart-sass-version: "1.108.2"
 
             - name: Build
               run: hugo --minify --gc
 
             - name: Deploy 🚀
+              if: github.event_name == 'push' && github.ref == 'refs/heads/master'
               uses: JamesIves/github-pages-deploy-action@v4
               with:
                   branch: gh-pages

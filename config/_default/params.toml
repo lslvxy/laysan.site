@@ -2,7 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "/favicon.png"
+favicon = "favicon.png"
 
 [footer]
 since = 2013
@@ -15,11 +15,7 @@ lastUpdated = "2006-01-02 15:04 MST"
 [sidebar]
 emoji = "🦋"
 subtitle = "Poetic Oranges, Lovely Pomelo."
-
-[sidebar.avatar]
-enabled = true
-local = true
-src = "img/avatar.png"
+avatar = "img/avatar.png"
 
 [article]
 headingAnchor = false
@@ -59,16 +55,11 @@ type = "toc"
 site = ""
 card = "summary_large_image"
 
-[defaultImage.opengraph]
-enabled = true
-local = false
-src = ""
-
 [colorScheme]
 toggle = true
 default = "auto"
 
-[imageProcessing.cover]
+[imageProcessing.thumbnail]
 enabled = true
 
 [imageProcessing.content]
