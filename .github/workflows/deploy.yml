@@ -1,4 +1,4 @@
-name: Build and notify Bing
+name: Build and submit to IndexNow
 
 on:
     push:
@@ -73,7 +73,7 @@ jobs:
                   echo "::error::Timed out waiting for Cloudflare Pages."
                   exit 1
 
-            - name: Notify Bing via IndexNow
+            - name: Notify Bing and Yandex via IndexNow
               if: >-
                   github.repository == 'lslvxy/laysan.site' &&
                   github.ref == 'refs/heads/main' &&

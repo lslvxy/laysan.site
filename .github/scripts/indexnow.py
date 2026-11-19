@@ -12,7 +12,7 @@ import xml.etree.ElementTree as ET
 
 HOST = "laysan.site"
 SITEMAP_URL = f"https://{HOST}/sitemap.xml"
-INDEXNOW_URL = "https://www.bing.com/indexnow"
+INDEXNOW_URL = "https://api.indexnow.org/indexnow"
 KEY_FILE = Path(__file__).resolve().parents[2] / "static" / "672250591380a3705fb15bdf6d43d3f7.txt"
 BATCH_SIZE = 10_000
 
@@ -80,13 +80,13 @@ def submit(urls):
             input=payload,
         ).decode("ascii")
         if code not in {"200", "202"}:
-            raise ValueError(f"Bing IndexNow returned HTTP {code}")
+            raise ValueError(f"IndexNow returned HTTP {code}")
         status = "accepted, key verification pending" if code == "202" else "submitted"
         print(f"IndexNow: {len(batch)} URLs {status} (HTTP {code}).")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Notify Bing about published URLs.")
+    parser = argparse.ArgumentParser(description="Submit published URLs to IndexNow.")
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--base", help="Previous commit SHA for incremental submission")
     mode.add_argument("--all", action="store_true", help="Submit all URLs in the live sitemap")

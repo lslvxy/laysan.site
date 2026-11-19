@@ -4,7 +4,7 @@
 
 This is a quick start template for [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
 
-Cloudflare Pages publishes the site from `main`. GitHub Actions checks the build and notifies Bing via IndexNow after a successful Cloudflare Pages deployment. A daily workflow updates the theme.
+Cloudflare Pages publishes the site from `main`. After a successful deployment, GitHub Actions submits changed URLs to the shared IndexNow endpoint for distribution to Bing, Yandex, and other participating search engines. A daily workflow updates the theme.
 
 ## Get started
 
