@@ -1,6 +1,7 @@
 # Change baseurl before deploy
 baseurl = "https://laysan.site"
 locale = "en-US"
+timeZone = "Asia/Shanghai"
 title = "Laysan's Blog"
 
 # Theme i18n support
