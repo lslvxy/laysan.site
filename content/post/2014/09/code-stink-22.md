@@ -5,6 +5,7 @@ comments: on
 categories:  [Other]
 tags: [code,代码]
 id: 201409300930
+description: "用重复代码、过长方法、过大类和霰弹式修改等例子说明如何识别代码坏味道，并给出提炼方法、移动职责等重构方向。"
 ---
 22 种代码的坏味道
 <!-- more -->

@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [IDEA,JetBrains,技巧]
 id: 201606160930
+description: "回顾从 Eclipse 系工具转向 JetBrains IDE 的经历，记录不同开发阶段接触的工具，以及换工具时的体会。"
 ---
 
 

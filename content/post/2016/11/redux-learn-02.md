@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [React,Redux,Web]
 id: 201611140930
+description: "把上一节的红绿灯 Redux 状态接入 React，用组件显示灯色，并通过容器和状态映射让界面随 Redux 更新。"
 ---
 
 

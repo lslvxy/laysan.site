@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [JavaScript,Decorator,装饰器]
 id: 201704052130
 no_image: https://source.unsplash.com/random/800x600
-description: 装饰器的流行应该感谢在Angular 2+中使用，在Angular中，装饰器因TypeScript能使用。但是在JavaScript中，还处于提议阶段。本文将介绍装饰器是什么，及装饰器如何让代码更加简洁和容易理解。
+description: "用函数包装引出 JavaScript 的 @ 装饰器语法，介绍类与类属性装饰器，并通过日志、core-decorators 和 React 示例展示用法。"
 ---
 装饰器的流行应该感谢在Angular 2+中使用，在Angular中，装饰器因TypeScript能使用。但是在JavaScript中，还处于提议阶段。本文将介绍装饰器是什么，及装饰器如何让代码更加简洁和容易理解。
 

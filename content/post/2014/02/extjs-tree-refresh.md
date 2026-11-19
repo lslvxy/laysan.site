@@ -5,6 +5,7 @@ comments: on
 categories:  [ExtJs]
 tags: [extjs,tree,树,checkbox]
 id: 201402250930
+description: "演示 Ext JS 3.x 和 4.x 如何在树刷新前保存节点的 ID 路径，加载后沿路径逐级展开并恢复选中，同时说明返回数据对节点 ID 的要求。"
 ---
 
 在对树节点进行操作后往往需要进行reload操作刷新一下树，但是很多业务都需要在树形刷新后默认选中最后一次选中的节点。这样就必须先保存前一次选中节点的信息，在reload之后再次通过节点的信息进行expand逐层展开到这个节点上。

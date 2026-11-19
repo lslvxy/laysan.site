@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [React,Redux,Web]
 id: 201611130930
+description: "用循环切换的红绿灯入门 Redux，从安装依赖和搭建示例环境开始，编写 Action、Reducer 与 Store 并运行第一个示例。"
 ---
 
 

@@ -6,7 +6,7 @@ categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202604161230
 no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
-description: PVE 9 监控新纪元：基于 OpenTelemetry 与 Grafana Alloy 的全栈观测实践
+description: "在 PVE 9 将 OpenTelemetry 指标推送给 Grafana Alloy，再写入 Prometheus。提供 Docker Compose、OTLP 接收配置和 Grafana 面板的查询示例。"
 ---
 
 

@@ -6,6 +6,7 @@ categories:  [ExtJs]
 tags: [extjs, grid,分组,排序]
 id: 201312021200
 
+description: "针对 Ext JS 的 GridPanel 分组后组名排序问题，示例扩展 GroupingStore，让分组字段按指定方向排列，并演示按状态降序分组。"
 ---
 
 ExtJs 中对 gridpanel 分组后的组名进行排序，GroupingGrid 分组后是不能对组名再进行排序的，本文介绍了相关方法。

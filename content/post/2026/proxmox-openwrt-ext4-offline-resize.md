@@ -6,7 +6,7 @@ categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202611181230
 no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
-description: Proxmox VE 给 OpenWrt 扩盘后仍只有 100 MB？离线扩展 ext4 根分区
+description: "PVE 虚拟磁盘扩到 32 GiB 后，OpenWrt 根目录仍只有约 100 MiB。记录备份、离线扩展 MBR 分区与 ext4，以及重启后 31.6 GiB 的实测结果。"
 ---
 
 在 Proxmox VE（PVE）里把 OpenWrt 虚拟机的磁盘扩到 32 GiB，进系统执行 `df -h`，根目录却还只有 98.3 MiB。原因是虚拟磁盘、分区和文件系统各自记录容量。PVE 已经增大了虚拟磁盘，还需要把尾部空间分给根分区，再扩展分区里的 ext4。

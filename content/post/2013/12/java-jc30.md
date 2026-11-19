@@ -5,6 +5,7 @@ comments: on
 categories:  [Java]
 tags: [java,基础,规范]
 id: 201312030930
+description: "汇总 30 条 Java 编码建议，涉及类、方法与常量的命名、通用类的常用方法，以及如何让代码更易阅读和维护。"
 ---
 
 JAVA基础：JAVA代码编写的30条建议，一些规范和默认的代码规则。

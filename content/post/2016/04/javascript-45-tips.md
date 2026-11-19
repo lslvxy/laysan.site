@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [JQuery,tips,web]
 id: 201604200930
+description: "汇集 45 个 JavaScript 开发示例，从变量与类型判断、数组和随机数，到函数写法及浏览器端的编程细节。"
 ---
 
 

@@ -5,6 +5,7 @@ comments: on
 categories:  [Other]
 tags: [git,github,github pages]
 id: 201310300930
+description: "记录在 Windows 上用 Git、Ruby 和 Jekyll Bootstrap 搭建个人博客的过程，涵盖 SSH 密钥、GitHub 仓库和 Jekyll 本地调试。"
 ---
 
 我写这篇文章的目的是记录本博客的搭建过程，自己从零开始逐步搭建起来了GitHub Pages，其中借鉴了很多的博客和模版，稍后会在后面列出，也为没有用过gihub和jekyll的童鞋提供一点帮助。

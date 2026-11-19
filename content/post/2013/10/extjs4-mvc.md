@@ -6,6 +6,7 @@ comments: on
 tags: [extJs4, MVC]
 id: 201310290930
 
+description: "以学生列表为例搭建 Ext JS 4 的 MVC 应用，从定义控制器和视图，到用 Model 与 Store 管理数据、编辑记录并同步到服务器。"
 ---
 
 ### 一、ExtJs 4.x MVC 模式的原理与作用

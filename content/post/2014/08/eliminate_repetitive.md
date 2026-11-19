@@ -5,6 +5,7 @@ comments: on
 categories:  [Java]
 tags: [MD5,重复,文件]
 id: 201408160930
+description: "从筛掉重复壁纸的需求出发，用 Java 计算文件的 MD5，再用 Set 识别重复项，避免对目录中的文件逐一两两比较。"
 ---
 
 

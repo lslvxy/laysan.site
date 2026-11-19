@@ -6,6 +6,7 @@ categories:  [Web]
 tags: [React,Redux,Web]
 id: 201608080930
 
+description: "用单一数据源和单向数据流解释 Redux，并演示如何组织 Action、Reducer 与 Store、用 thunk 处理异步操作，以及接入 React 组件。"
 ---
 
 React + Redux 基本入坑配置

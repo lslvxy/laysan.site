@@ -5,6 +5,7 @@ comments: on
 categories:  [Java]
 tags: [maven,jar,版本]
 id: 201401130930
+description: "从打包目录出现多个版本的 JAR 入手，用 mvn dependency:tree 找到重复依赖的来源，并在 POM 中通过 exclusions 排除传递依赖。"
 ---
 有人认为Maven是一个依赖管理工具，当然这种想法是错误的（确切的说Maven是一个项目管理工具，贯穿了整个项目生命周期，编译，测试，打包，发布...），但Maven给人造成这种错误的印象也是有原因的，因为Maven的依赖管理十分强大，用好了Maven，你不再需要面对一大堆jar感到头大，依赖冲突，无用依赖等问题也能够得到有效的防止和解决。
 <!-- more -->

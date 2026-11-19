@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [JavaScript,For]
 id: 201612121330
 no_image: https://source.unsplash.com/random/800x600
-description:  深入了解 JavaScript 中的 for 循环
+description: "比较普通 for、for…in、forEach 和 for…of 的遍历目标、控制方式和适用场景，说明用 for…in 遍历数组时会遇到的问题。"
 ---
 
 在[ECMAScript5（简称 ES5）](https://link.zhihu.com/?target=http%3A//ecma-international.org/ecma-262/5.1/)中，有三种 for 循环，分别是：

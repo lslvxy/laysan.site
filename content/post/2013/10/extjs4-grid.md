@@ -5,6 +5,7 @@ comments: on
 categories: [ExtJs]
 tags: [extjs, grid,表格]
 id: 201310170930
+description: "用 Ext JS 4 示例配置 Grid 的列类型、渲染函数和选择模式，并演示行分组、汇总、单元格编辑、拖拽和分页。"
 ---
 
 grid表格是extjs的核心组件之一，它提供了展示大量数据的最佳途径。Grid组件的重要特性包括：智能渲染、标准布局、数据视图、特性支持、虚拟滚动和编辑改进，这些特性共同缔造了功能强大的4.0grid组件。

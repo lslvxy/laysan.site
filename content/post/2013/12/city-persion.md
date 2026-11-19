@@ -6,6 +6,7 @@ categories:  [Other]
 tags: [时光,散文]
 id: 201312010930
 
+description: "从年少时对爱情童话的憧憬写到平凡日子中的相守，描绘两个人如何在柴米油盐中陪伴彼此，直到白发。"
 ---
 
 ![love](//img.leense.site/post/2013/12/201312010930-1.jpg)

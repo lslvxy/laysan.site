@@ -5,6 +5,7 @@ comments: on
 categories:  [Other]
 tags: [Liquid,语法]
 id: 201404080930
+description: "通过模板示例介绍 Liquid 的变量输出和过滤器，以及注释、条件分支、循环、变量赋值等常用标签。"
 ---
 Liquid基础语法。
 <!-- more -->

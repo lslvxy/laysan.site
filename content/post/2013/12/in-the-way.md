@@ -5,6 +5,7 @@ comments: on
 categories:  [Other]
 tags: [散文]
 id: 201312220930
+description: "以独自行路和沿途风景为线索，写相遇、别离与取舍，体会经历如何让人学会感恩、简化生活并从容向前。"
 ---
 
 

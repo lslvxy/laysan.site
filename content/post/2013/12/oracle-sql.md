@@ -5,6 +5,7 @@ comments: on
 categories:  [DataBase]
 tags: [oracle,数据库,sql]
 id: 201312031830
+description: "整理 Oracle 日常查询示例，包括多行字符串聚合、表和序列元数据查询、DISTINCT 排序报错，以及误删数据和对象的恢复。"
 ---
 
 

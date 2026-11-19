@@ -5,6 +5,7 @@ comments: on
 categories:  [ExtJs]
 tags: [extjs,store,reader,writer]
 id: 201404040930
+description: "解释 Ext JS 4 如何用 Reader 把 JSON、XML 或数组解析为 Model，并用 Writer 序列化记录，配合代理完成 Store 的数据读写。"
 ---
 
 ExtJs4中的Store是最常用的组件了，本文对store以及reader和writer做了详细的说明。

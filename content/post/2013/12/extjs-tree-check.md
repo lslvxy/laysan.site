@@ -5,6 +5,7 @@ comments: on
 categories:  [ExtJs]
 tags: [extjs,tree,树,勾选]
 id: 201312021500
+description: "给出 Ext JS 3.x 与 4.x 清除树节点勾选的代码，分别通过 toggleCheck 和 checked 字段同步节点状态与界面。"
 ---
 
 

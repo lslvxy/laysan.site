@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [JavaScript, CSS, 布局]
 id: 201704052130
 no_image: https://source.unsplash.com/random/800x600
-description: 对一个元素水平垂直居中，在我们的工作中是会经常遇到的，也是CSS布局中很重要的一部分，本文就来讲讲CSS水平垂直居中的一些方法。
+description: "按不同 CSS 布局上下文整理水平和垂直居中的方法，涵盖文本、盒模型、绝对定位、浮动以及 BFC 和 IFC 中的示例。"
 ---
 
 对一个元素水平垂直居中，在我们的工作中是会经常遇到的，也是 CSS 布局中很重要的一部分，本文就来讲讲 CSS 水平垂直居中的一些方法。

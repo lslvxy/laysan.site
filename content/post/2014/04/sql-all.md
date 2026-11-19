@@ -5,6 +5,7 @@ comments: on
 date: 2014-04-21
 tags: [sql,statement]
 id: 201404211230
+description: "按数据定义、操作和控制整理常见 SQL，包含创建与备份数据库、建表改表，以及数据增删改查和统计的示例。"
 ---
 常见的sql语句集合
 

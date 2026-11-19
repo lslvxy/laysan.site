@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [Web,npm,npmjs]
 id: 201611210930
 no_image: https://source.unsplash.com/random/800x600
-description: 对于一个项目，常用的一些npm简单命令包含的功能有：初始化一个文件夹( npm init )，下载npm模块( npm install )，创建测试( npm test ) 和自定义脚本( npm run )。但是，进一步了解一些 npm 的使用技巧可以彻底改变你的日常开发任务。
+description: "整理 npm 的命令帮助与自动补全、全局安装权限、初始化默认值、依赖锁定、过期检查和本地模块开发等十项操作。"
 ---
 
 

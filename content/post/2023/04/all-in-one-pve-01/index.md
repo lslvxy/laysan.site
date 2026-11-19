@@ -6,7 +6,7 @@ categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202304061230
 image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
-description: 从零开始的 All In One With PVE 之一 硬件配置与系统安装
+description: "记录在 HPE MicroServer Gen10 Plus 上搭建 PVE 家庭服务器的过程，包括系统盘与 ZFS 存储分工、安装和虚拟机规划。"
 ---
 
 

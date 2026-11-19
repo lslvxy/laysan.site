@@ -5,6 +5,7 @@ comments: on
 categories:  [Other]
 tags: [排序,算法]
 id: 201312031646
+description: "从有序序列的插入讲起，用示例说明插入、冒泡和鸡尾酒排序的工作过程，并介绍二叉排序树的组织方式。"
 ---
 
 

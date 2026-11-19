@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [js,javascript,eval,函数]
 id: 201312031630
+description: "用代码说明 eval() 如何执行字符串，比较直接和间接调用的作用域，并解释 ES5 严格模式对读取和修改局部变量的限制。"
 ---
 
 

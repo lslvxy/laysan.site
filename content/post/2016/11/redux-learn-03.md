@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [React,Redux,Web]
 id: 201611141430
+description: "给 React 与 Redux 的红绿灯示例加上可见的倒计时，通过 Counter 组件演示多个 reducer 和组件如何在同一个应用中协作。"
 ---
 
 前面的教程里面，我们搭建了一个简单红绿灯示例，通过在console输出当面的倒计时时间；由于界面上不能显示倒计时，用户体验并不良好，本节我们就添加一个简单的倒计时改善一下。

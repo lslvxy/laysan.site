@@ -6,6 +6,7 @@ categories:  [Web]
 tags: [css,web,margin]
 id: 201603100930
 
+description: "从 CSS 盒模型出发，说明哪些垂直外边距会折叠、正负值如何合并，并用例题分析兄弟元素与父子元素之间的间距。"
 ---
 
 本文着重描述关于 margin，我们日常不太容易发现的“坑”。

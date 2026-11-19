@@ -5,6 +5,7 @@ comments: on
 categories:  [DataBase]
 tags: [oracle,日期,to_date]
 id: 201312041030
+description: "汇总 Oracle 日期与字符串的转换示例，包括 TO_DATE 和 TO_CHAR 格式、日期相减、月份差、星期、时区和时间间隔的计算。"
 ---
 
 Oracle中TO_DATE的用法，包括时间格式化以及常用的时间相关函数和方法。

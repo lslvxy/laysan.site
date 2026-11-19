@@ -6,7 +6,7 @@ categories:  [Other]
 tags: [Interview ,面试 , 总结]
 id: 201803171230
 no_image: https://source.unsplash.com/random/800x600
-description: 记录个人2018年初的面试经验并总结，以及规划下这一年的技术发展方向
+description: "复盘 2018 年前端求职中的面试准备、工作经历和技术深度，整理闭包、CSS、React、Vue 与 Redux 等题目及后续学习计划。"
 ---
 
 一晃博客又是大半年没有更新了。主要还是自己的惰性造成的，另外自己也是不善于总结，很多学习到的知识都没有及时的总结，形成文字记录下来，以后还是要多督促一下自己。

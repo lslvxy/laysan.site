@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [css,cut,图片,切割]
 id: 201404030930
+description: "演示两种从一张合图显示局部图像的方法，一种用背景定位，另一种用 img 元素裁切，从而复用图片并减少请求。"
 ---
 
 

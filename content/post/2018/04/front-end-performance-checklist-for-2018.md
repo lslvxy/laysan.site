@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [前端 ,性能 , 优化]
 id: 2018004041230
 no_image: https://source.unsplash.com/random/800x600
-description: 以前，性能往往只是事后的想法。通常直到项目最后的时候才会被考虑，然后被归结为压缩、合并、静态资源优化或者对服务器配置文件的一些细微调整。现在回想起来，事情似乎已经发生了很大的变化。
+description: "这份 2018 年前端性能清单从指标、目标和性能预算出发，贯穿构建、资源加载、缓存和监控，帮助定位页面响应慢的环节。"
 ---
 
 > 原文地址：[https://juejin.im/post/5ac1d117f265da2396128b9f](https://juejin.im/post/5ac1d117f265da2396128b9f)

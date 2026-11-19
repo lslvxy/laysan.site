@@ -5,6 +5,7 @@ comments: on
 categories:  [Linux]
 tags: [Linux,Ubuntu]
 id: 201611110930
+description: "记录 Ubuntu 和 Linux Mint 的日常配置，包括用 ServerAliveInterval 避免 SSH 空闲断连，以及软件源、Docker 和 Sublime Text 中文输入。"
 ---
 
 搜集了日常工作中linuxmint的使用的命令备份和遇到的问题以及解决办法.(持续更新中)

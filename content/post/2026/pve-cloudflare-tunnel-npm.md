@@ -6,7 +6,7 @@ categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202604041230
 no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
-description: 家庭实验室（Home Lab）网络架构演进：从旁路由劫持到 Cloudflare Tunnel + NPM 方案
+description: "记录家庭实验室从旁路由 DNS 分流迁移到 Cloudflare Tunnel 和 Nginx Proxy Manager 的过程，涵盖 Docker 网络、服务转发与重定向循环排查。"
 ---
 
 

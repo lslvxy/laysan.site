@@ -5,6 +5,7 @@ comments: on
 categories:  [Java]
 tags: [maven,插件,plugins]
 id: 201312110930
+description: "介绍 Maven 插件目标与构建生命周期的关系，并列出依赖分析、项目脚手架、打包、测试和版本发布常用的插件。"
 ---
 
 

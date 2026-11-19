@@ -6,7 +6,7 @@ categories:  [Other]
 tags: [Other ]
 id: 202104212330
 no_image: https://source.unsplash.com/random/800x600
-description: AutoJob 使用文档
+description: "介绍 AutoJob 自动签到小程序及服务端，说明如何用 Java 或 Docker 私有化部署，以及添加签到账号和配置 Server 酱推送。"
 ---
 
 

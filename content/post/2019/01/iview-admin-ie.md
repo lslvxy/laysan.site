@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [Web ,Vue , ]
 id: 201901282330
 no_image: https://source.unsplash.com/random/800x600
-description: iview-admin 2.x 兼容IE11的方法
+description: "记录让 iview-admin 2.x 在 IE11 中运行的调整，包括引入 Babel polyfill、转译依赖、调整 webpack-dev-server，以及移除不兼容的树表组件。"
 ---
 
 

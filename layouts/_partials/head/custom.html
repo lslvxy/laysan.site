@@ -1,1 +1,33 @@
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c2a7ed6ccc9b4443ba61878c4fbe3abc"}'></script><!-- End Cloudflare Web Analytics -->
+{{- if and .IsPage (eq .Section "post") }}
+    {{- $url := .Params.canonicalUrl | default .Permalink | absURL }}
+    {{- $schema := dict
+        "@context" "https://schema.org"
+        "@type" "BlogPosting"
+        "headline" (.Title | plainify)
+        "url" $url
+        "mainEntityOfPage" $url
+    }}
+
+    {{- with partialCached "data/description" . .RelPermalink }}
+        {{- $schema = merge $schema (dict "description" .) }}
+    {{- end }}
+
+    {{- $dateFormat := "2006-01-02T15:04:05Z07:00" }}
+    {{- $published := .PublishDate }}
+    {{- if not $published.IsZero }}
+        {{- $schema = merge $schema (dict "datePublished" ($published.Format $dateFormat)) }}
+    {{- end }}
+    {{- if .Lastmod.After $published }}
+        {{- $schema = merge $schema (dict "dateModified" (.Lastmod.Format $dateFormat)) }}
+    {{- end }}
+
+    {{- with .Params.author }}
+        {{- $schema = merge $schema (dict "author" (dict "@type" "Person" "name" .)) }}
+    {{- end }}
+
+    {{- with partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
+        {{- $schema = merge $schema (dict "image" (absURL .Permalink)) }}
+    {{- end }}
+    <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- end }}

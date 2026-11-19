@@ -6,7 +6,7 @@ categories:  [PVE]
 tags: [PVE,AIO,ALL In One ]
 id: 202412041230
 no_image: https://cdn.jsdelivr.net/gh/lslvxy/imgs@main/pics/20230406161428.jpg
-description: PVE 报错  Unable to create new inotify object 解决方案
+description: "当 PVE 上的 pct 命令报 Unable to create new inotify object 时，检查 LXC 数量及 inotify 实例上限，并演示如何用 sysctl 调整。"
 ---
 
 

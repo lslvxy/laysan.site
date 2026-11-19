@@ -5,6 +5,7 @@ comments: on
 categories:  [Web]
 tags: [JavaScript,web,技巧]
 id: 201605180930
+description: "用短代码展示 JavaScript 的布尔与数字转换、属性检查、数组截断与合并、NodeList 转数组，以及如何打乱数组。"
 ---
 
 在这篇文章中将给大家分享12个有关于JavaScript的小技巧。这些小技巧可能在你的实际工作中或许能帮助你解决一些问题。

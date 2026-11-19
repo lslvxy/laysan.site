@@ -5,6 +5,7 @@ comments: on
 date: 2014-04-21
 tags: [oracle,控制,if,case]
 id: 201404210930
+description: "用 PL/SQL 示例讲解 IF、CASE 语句与 CASE 表达式、LOOP、WHILE 和 FOR 循环，并说明顺序控制与异常处理。"
 ---
 Oracle程序控制结构简介
 <!-- more -->

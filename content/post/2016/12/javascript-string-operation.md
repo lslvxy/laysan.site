@@ -6,7 +6,7 @@ categories:  [Web]
 tags: [JavaScript,String,字符串]
 id: 201612201330
 no_image: https://source.unsplash.com/random/800x600
-description: JavaScript 字符串用于存储和处理文本。因此在编写 JS 代码之时她总如影随形，在你处理用户的输入数据的时候，在读取或设置 DOM 对象的属性时，在操作 Cookie 时，在转换各种不同 Date 时，诸此等等，繁不能数.
+description: "通过例子对比 JavaScript 的 substring、slice 和 split，整理字符串查找、替换、模板字符串、反转和转数组的常用写法。"
 ---
 
 
