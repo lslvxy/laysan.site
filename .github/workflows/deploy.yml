@@ -1,19 +1,24 @@
-name: Deploy to Github Pages
+name: Build and notify Bing
 
 on:
     push:
-        branches: [main, master]
+        branches: [main]
     pull_request:
-        branches: [main, master]
+        branches: [main]
+    workflow_dispatch:
+        inputs:
+            base_sha:
+                description: "Previous commit SHA for incremental submission. Leave blank for a site-wide update."
+                required: false
+                type: string
 
 jobs:
     build:
         runs-on: ubuntu-latest
 
         permissions:
-            # Give the default GITHUB_TOKEN write permission to commit and push the
-            # added or changed files to the repository.
-            contents: write
+            contents: read
+            checks: read
 
         steps:
             - uses: actions/checkout@v4
@@ -42,11 +47,42 @@ jobs:
             - name: Build
               run: hugo --minify --gc
 
-            - name: Deploy 🚀
-              if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  branch: gh-pages
-                  folder: public
-                  clean: true
-                  single-commit: true
+            - name: Wait for Cloudflare Pages production deployment
+              if: >-
+                  github.repository == 'lslvxy/laysan.site' &&
+                  github.ref == 'refs/heads/main' &&
+                  (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+              timeout-minutes: 6
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              run: |
+                  echo "Waiting for the Cloudflare Pages check on ${GITHUB_SHA}."
+                  for ((attempt = 1; attempt <= 30; attempt++)); do
+                      conclusion=$(gh api \
+                          "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/check-runs?check_name=Cloudflare%20Pages&filter=latest" \
+                          --jq 'first(.check_runs[] | select(
+                              .app.slug == "cloudflare-workers-and-pages" and
+                              ((.details_url // "") | contains("/pages/view/laysan/"))
+                          )) | .conclusion // empty')
+                      case "$conclusion" in
+                          success) exit 0 ;;
+                          "") sleep 10 ;;
+                          *) echo "::error::Cloudflare Pages finished with: $conclusion"; exit 1 ;;
+                      esac
+                  done
+                  echo "::error::Timed out waiting for Cloudflare Pages."
+                  exit 1
+
+            - name: Notify Bing via IndexNow
+              if: >-
+                  github.repository == 'lslvxy/laysan.site' &&
+                  github.ref == 'refs/heads/main' &&
+                  (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+              env:
+                  BASE_SHA: ${{ github.event.before || inputs.base_sha }}
+              run: |
+                  if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && -z "$BASE_SHA" ]]; then
+                      python3 .github/scripts/indexnow.py --all
+                  else
+                      python3 .github/scripts/indexnow.py --base "$BASE_SHA"
+                  fi
