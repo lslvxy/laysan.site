@@ -1,5 +1,5 @@
 ---
-title:  告别臃肿：用全 Rust 工具链（Sheldon + Starship + Atuin + Zoxide + Mise）打造极致流畅的现代 Zsh 终端
+title:  告别臃肿：用全 Rust 工具链打造极致流畅的现代 Zsh 终端
 date: 2026-06-01
 comments: on
 categories:  [Shell]
