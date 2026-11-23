@@ -82,7 +82,7 @@ jobs:
                   BASE_SHA: ${{ github.event.before || inputs.base_sha }}
               run: |
                   if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && -z "$BASE_SHA" ]]; then
-                      python3 .github/scripts/indexnow.py --all
+                      python3 .github/scripts/indexnow.py --public-dir public --all
                   else
-                      python3 .github/scripts/indexnow.py --base "$BASE_SHA"
+                      python3 .github/scripts/indexnow.py --public-dir public --base "$BASE_SHA"
                   fi

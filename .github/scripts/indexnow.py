@@ -11,7 +11,6 @@ import xml.etree.ElementTree as ET
 
 
 HOST = "laysan.site"
-SITEMAP_URL = f"https://{HOST}/sitemap.xml"
 INDEXNOW_URL = "https://api.indexnow.org/indexnow"
 KEY_FILE = Path(__file__).resolve().parents[2] / "static" / "672250591380a3705fb15bdf6d43d3f7.txt"
 BATCH_SIZE = 10_000
@@ -21,6 +20,12 @@ def get(url):
     return subprocess.check_output(
         ["curl", "--fail", "--silent", "--show-error", "--max-time", "30", url]
     )
+
+
+def read_public_file(name, public_dir):
+    if public_dir is not None:
+        return (public_dir / name).read_bytes()
+    return get(f"https://{HOST}/{name}")
 
 
 def sitemap_urls(xml):
@@ -61,11 +66,11 @@ def changed_urls(base):
     }
 
 
-def submit(urls):
+def submit(urls, public_dir):
     key = KEY_FILE.read_text(encoding="utf-8").strip()
     key_location = f"https://{HOST}/{KEY_FILE.name}"
-    if KEY_FILE.stem != key or get(key_location).decode("utf-8").strip() != key:
-        raise ValueError("The public IndexNow key file does not match the local key")
+    if KEY_FILE.stem != key or read_public_file(KEY_FILE.name, public_dir).decode("utf-8").strip() != key:
+        raise ValueError("The IndexNow key file in the site output does not match the local key")
 
     for start in range(0, len(urls), BATCH_SIZE):
         batch = urls[start:start + BATCH_SIZE]
@@ -89,22 +94,23 @@ def main():
     parser = argparse.ArgumentParser(description="Submit published URLs to IndexNow.")
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--base", help="Previous commit SHA for incremental submission")
-    mode.add_argument("--all", action="store_true", help="Submit all URLs in the live sitemap")
+    mode.add_argument("--all", action="store_true", help="Submit all URLs in the sitemap")
+    parser.add_argument("--public-dir", type=Path, help="Read the sitemap and key from the deployed Hugo build output")
     parser.add_argument("--dry-run", action="store_true", help="List URLs without submitting")
     args = parser.parse_args()
 
     try:
         candidates = changed_urls(args.base) if not args.all else None
-        urls = sitemap_urls(get(SITEMAP_URL)) if candidates is None or candidates else set()
+        urls = sitemap_urls(read_public_file("sitemap.xml", args.public_dir)) if candidates is None or candidates else set()
         if candidates is not None:
             urls &= candidates
 
         if not urls:
-            print("No changed URLs in the live sitemap.")
+            print("No changed URLs in the sitemap.")
         elif args.dry_run:
             print("\n".join(sorted(urls)))
         else:
-            submit(sorted(urls))
+            submit(sorted(urls), args.public_dir)
     except (OSError, ValueError, ET.ParseError, subprocess.CalledProcessError) as exc:
         print(f"IndexNow failed: {exc}", file=sys.stderr)
         return 1
